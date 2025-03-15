@@ -60,6 +60,39 @@ public class Main {
                         System.out.println("9). Go Back main menu");
                         choice = sc.nextInt();
                         break;
+                    case 4:
+                        for(int i=0; i<showroom_counter; i++){
+                            showroom[i].get_details();
+                            System.out.println();
+                        }
+                        System.out.println();
+                        System.out.println("9). Go Back To Main Menu");
+                        System.out.println("0). Exist");
+                        choice = sc.nextInt();
+                        break;
+                    case 5:
+                        for (int i = 0; i < employees_counter; i++){
+                            employee[i].get_details();
+                            System.out.println();
+                        }
+                        System.out.println();
+                        System.out.println("9). Go Back To Main Menu");
+                        System.out.println("0). Exist");
+                        choice = sc.nextInt();
+                        break;
+                    case 6:
+                        for(int i=0; i<car_counter; i++){
+                            car[i].get_details();
+                            System.out.println();
+                        }
+                        System.out.println();
+                        System.out.println("9). Go Back To Main Menu");
+                        System.out.println("0). Exist");
+                        choice = sc.nextInt();
+                        break;
+                    default:
+                        System.out.println("Enter valid choice: ");
+                        break;
                 }
             }
         }
